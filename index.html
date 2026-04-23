@@ -2,123 +2,201 @@ html_content = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Phan Tran Quoc Bao</title>
-    <style>
-        :root {
-            --primary: #2563eb;
-            --dark: #0f172a;
-            --light: #f8fafc;
-            --accent: #3b82f6;
-        }
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; color: var(--dark); background: var(--light); }
-        .container { max-width: 1000px; margin: auto; padding: 20px; }
-        header { background: white; padding: 60px 0; border-bottom: 4px solid var(--primary); text-align: center; }
-        h1 { margin: 0; color: var(--primary); font-size: 2.5em; }
-        .tagline { color: #475569; margin-top: 10px; }
-        .section { background: white; padding: 30px; margin: 20px 0; border-radius: 10px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); }
-        h2 { border-left: 5px solid var(--primary); padding-left: 12px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-        .card { border: 1px solid #e2e8f0; padding: 20px; border-radius: 8px; }
-        .stats { color: var(--primary); font-weight: bold; }
-        .badge { background: #dbeafe; color: #1e40af; padding: 6px 12px; border-radius: 20px; display: inline-block; margin: 5px; font-size: 0.85em; }
-        .contact-btn { display: inline-block; background: var(--primary); color: white; padding: 12px 25px; text-decoration: none; border-radius: 6px; margin-top: 20px; }
-        footer { text-align: center; padding: 30px; color: #64748b; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phan Tran Quoc Bao</title>
+
+<style>
+:root {
+    --primary:#2563eb;
+    --text:#0f172a;
+    --sub:#64748b;
+    --bg:#f8fafc;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+}
+
+.container {
+    max-width:900px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.header {
+    margin-bottom:30px;
+}
+
+.name {
+    font-size:28px;
+    font-weight:700;
+}
+
+.meta {
+    color:var(--sub);
+    font-size:14px;
+    margin-top:6px;
+}
+
+.block {
+    background:#fff;
+    padding:22px;
+    border-radius:10px;
+    margin-bottom:16px;
+    border:1px solid #e5e7eb;
+}
+
+.line {
+    margin:6px 0;
+}
+
+.small {
+    color:var(--sub);
+    font-size:14px;
+}
+
+.highlight {
+    color:var(--primary);
+    font-weight:600;
+}
+
+.row {
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.company {
+    font-weight:600;
+}
+
+.role {
+    color:var(--sub);
+}
+
+.badge {
+    display:inline-block;
+    background:#eff6ff;
+    color:#1e40af;
+    padding:4px 10px;
+    border-radius:999px;
+    font-size:12px;
+    margin:4px 6px 0 0;
+}
+</style>
+
 </head>
 <body>
 
-<header>
-    <div class="container">
-        <h1>Phan Tran Quoc Bao</h1>
-        <p class="tagline">Operations & Supply Chain Specialist | Manufacturing • Logistics • Data Analytics</p>
-        <p>Binh Duong, Vietnam • (+84) 916 11 12 95 • bao11121995@gmail.com</p>
-        <p>IELTS 7.0 • Open for Remote Global Opportunities</p>
-        <a href="mailto:bao11121995@gmail.com" class="contact-btn">Contact Me</a>
-    </div>
-</header>
-
 <div class="container">
 
-    <div class="section">
-        <h2>Professional Summary</h2>
-        <p>
-            Operations & Planning Specialist with 6+ years of experience driving end-to-end efficiency across Manufacturing, Demand Planning, and Nationwide Logistics.
-            Proven track record of delivering measurable impact through data-driven decision making and scalable system design.
-        </p>
-        <p class="stats">
-            • Reduced logistics cost by ~8% • Increased productivity by 25–30% • Cut manual workload by ~50% • Recovered OTD from 88% → 100%
-        </p>
+<div class="header">
+    <div class="name">Phan Tran Quoc Bao</div>
+    <div class="meta">
+        Operations | Supply Chain | Manufacturing | Logistics  
+        <br>
+        Binh Duong, Vietnam • (+84) 916 11 12 95 • bao11121995@gmail.com  
+        <br>
+        IELTS 7.0 • Available for remote roles
     </div>
+</div>
 
-    <div class="section">
-        <h2>Key Impact Projects</h2>
-        <div class="grid">
-
-            <div class="card">
-                <h3>Nationwide Logistics Optimization</h3>
-                <p><strong>Lazada Express Vietnam</strong></p>
-                <p>Managed transport planning for nationwide network (200K–240K parcels/day, 30+ hubs).</p>
-                <p class="stats">• Reduced logistics cost by ~8%</p>
-                <p class="stats">• Increased productivity by 25–30%</p>
-                <p class="stats">• Improved hub capacity by ~20%</p>
-                <p class="stats">• Maintained 96% same-day pickup</p>
-                <p class="stats">• Cut manual workload by ~50% via automation</p>
-            </div>
-
-            <div class="card">
-                <h3>Manufacturing Planning & Ramp-up</h3>
-                <p><strong>C-Hawk Technology International</strong></p>
-                <p>Owned MPS/MRP for 400+ semiconductor SKUs ($15–20M revenue scope).</p>
-                <p class="stats">• Recovered OTD from ~88% → 100%</p>
-                <p class="stats">• Built planning system for new factory (greenfield)</p>
-                <p class="stats">• Enabled scalable ramp-up for 400+ SKUs</p>
-                <p class="stats">• Reduced rescheduling & material inefficiencies</p>
-            </div>
-
-        </div>
+<div class="block">
+    <div class="line">
+        Operations & Planning Specialist with 6+ years across Manufacturing, Demand Planning, and Nationwide Logistics.
     </div>
-
-    <div class="section">
-        <h2>Core Competencies</h2>
-        <div>
-            <span class="badge">MPS/MRP & Capacity Planning</span>
-            <span class="badge">Logistics Network Optimization</span>
-            <span class="badge">Cost-to-Serve & Budget Control</span>
-            <span class="badge">WIP & FG Flow Optimization</span>
-            <span class="badge">Routing & Transport Planning</span>
-        </div>
+    <div class="line highlight">
+        Reduced logistics cost ~8% • Increased productivity 25–30% • Cut manual workload ~50% • Recovered OTD 88% → 100%
     </div>
+</div>
 
-    <div class="section">
-        <h2>Data & Systems</h2>
-        <div>
-            <span class="badge">SQL (Advanced)</span>
-            <span class="badge">Power BI & Dashboarding</span>
-            <span class="badge">Power Query Automation</span>
-            <span class="badge">Advanced Excel</span>
-            <span class="badge">SAP / ERP / Epicor</span>
-            <span class="badge">BRD / PRD Documentation</span>
-        </div>
+<div class="block">
+
+    <div class="row">
+        <div class="company">C-Hawk Technology International</div>
+        <div class="small">Jun 2025 – Present</div>
     </div>
+    <div class="role">Senior Production Planner | Semiconductor | 400+ SKUs | $15–20M</div>
 
-    <div class="section">
-        <h2>Career Highlights</h2>
-        <ul>
-            <li>Led transport & capacity planning across 30+ hubs nationwide</li>
-            <li>Designed Max/Min/Safety Capacity models for factory ramp-up</li>
-            <li>Built automation dashboards reducing manual workload by ~50%</li>
-            <li>Managed cross-functional planning (Ops, Engineering, Supply Chain)</li>
-            <li>Delivered system improvements (routing logic, UI/UX, planning tools)</li>
-        </ul>
+    <div class="line">• Translated $12M–$15M revenue pipeline into executable MPS/MRP scenarios</div>
+    <div class="line">• Owned end-to-end planning for 400+ SKUs, balancing WIP & FG for cash flow</div>
+    <div class="line">• Built Max/Min/Safety capacity models → ensured 100% OTD during ramp-up</div>
+    <div class="line">• Standardized BOM/BOO → reduced lead time & material inefficiencies</div>
+
+    <div class="line highlight">
+        Built planning system (greenfield) • Recovered OTD from ~88% → 100% • Enabled 400+ SKU ramp-up
     </div>
 
 </div>
 
-<footer>
-    <p>© 2026 Phan Tran Quoc Bao | Built for Global Remote Opportunities</p>
-</footer>
+<div class="block">
+
+    <div class="row">
+        <div class="company">Lazada Express Vietnam</div>
+        <div class="small">Jun 2022 – Jun 2025</div>
+    </div>
+    <div class="role">Senior FM & LM Supervisor | 200K–240K parcels/day | 30+ hubs</div>
+
+    <div class="line">• Led transport planning & network optimization (first-mile → last-mile)</div>
+    <div class="line">• Owned logistics budget & cost control via routing + fill rate optimization</div>
+    <div class="line">• Built dashboards & SQL automation for planning</div>
+    <div class="line">• Wrote BRD/PRD and improved planning systems (routing logic, UI)</div>
+
+    <div class="line highlight">
+        Reduced cost ~8% • Increased productivity 25–30% • Improved hub capacity ~20%  
+        Maintained 96% same-day pickup • Reduced manual work ~50%
+    </div>
+
+</div>
+
+<div class="block">
+
+    <div class="row">
+        <div class="company">DHL Express</div>
+        <div class="small">Aug 2021 – Feb 2022</div>
+    </div>
+    <div class="role">Logistics Performance Executive</div>
+
+    <div class="line">• Monitored SLA, OTD, cost-to-serve</div>
+    <div class="line">• Analyzed performance data for operational decisions</div>
+
+</div>
+
+<div class="block">
+
+    <div class="row">
+        <div class="company">LG Vina Chem</div>
+        <div class="small">Mar 2019 – Jun 2021</div>
+    </div>
+    <div class="role">Demand Planning Lead</div>
+
+    <div class="line">• Led forecasting, inventory planning, distribution alignment</div>
+    <div class="line">• Managed team of 4</div>
+
+    <div class="line highlight">
+        Achieved 115% sales target • Increased market share • Employee of the Year
+    </div>
+
+</div>
+
+<div class="block">
+    <div class="line">
+        <span class="badge">MPS/MRP</span>
+        <span class="badge">Capacity Planning</span>
+        <span class="badge">Logistics Optimization</span>
+        <span class="badge">Cost-to-Serve</span>
+        <span class="badge">SQL</span>
+        <span class="badge">Power BI</span>
+        <span class="badge">Excel Advanced</span>
+        <span class="badge">SAP / ERP / Epicor</span>
+    </div>
+</div>
+
+</div>
 
 </body>
 </html>
