@@ -1,0 +1,91 @@
+# Đoạn mã này để bạn lưu thành file index.html
+html_content = """
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Phan Tran Quoc Bao</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --accent: #3b82f6;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; color: var(--dark); background: var(--light); }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        header { background: white; padding: 60px 0; border-bottom: 4px solid var(--primary); text-align: center; }
+        h1 { margin: 0; color: var(--primary); font-size: 2.5em; text-transform: uppercase; }
+        .tagline { font-size: 1.2em; color: #64748b; margin-top: 10px; }
+        
+        .section { background: white; padding: 30px; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }
+        h2 { border-left: 5px solid var(--primary); padding-left: 15px; color: var(--dark); margin-top: 0; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .card { border: 1px solid #e2e8f0; padding: 20px; border-radius: 8px; transition: transform 0.3s; }
+        .card:hover { transform: translateY(-5px); border-color: var(--primary); }
+        .card h3 { margin-top: 0; color: var(--primary); }
+        
+        .stats { color: var(--primary); font-weight: bold; font-size: 1.1em; }
+        .badge { background: #dbeafe; color: #1e40af; padding: 4px 12px; border-radius: 20px; font-size: 0.85em; display: inline-block; margin: 5px 2px; }
+        
+        .contact-btn { display: inline-block; background: var(--primary); color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; margin-top: 20px; }
+        footer { text-align: center; padding: 40px; color: #64748b; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Phan Tran Quoc Bao</h1>
+        <p class="tagline">Senior Operations & Data Analytics | 10+ Years Experience</p>
+        <p>Binh Duong, Vietnam • bao11121995@gmail.com • IELTS 7.0</p>
+        <a href="mailto:bao11121995@gmail.com" class="contact-btn">Liên hệ với tôi</a>
+    </div>
+</header>
+
+<div class="container">
+    <div class="section">
+        <h2>Tóm lược chuyên môn</h2>
+        <p>Chuyên gia vận hành với thành tích đã được chứng minh trong việc thúc đẩy hiệu quả đầu cuối (end-to-end) trên khắp các lĩnh vực Sản xuất, Lập kế hoạch nhu cầu và Logistics quy mô toàn quốc. Chuyên gia về SQL/BI giúp cắt giảm 50% khối lượng công việc thủ công.</p>
+    </div>
+
+    <div class="section">
+        <h2>Dự án tiêu biểu & Tác động</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Logistics Optimization</h3>
+                <p><strong>Lazada Express:</strong> Quản lý 200K-240K đơn hàng/ngày.</p>
+                <p class="stats">✓ Giảm 8% chi phí Logistics</p>
+                <p class="stats">✓ Tăng 25-30% năng suất</p>
+            </div>
+            <div class="card">
+                <h3>Manufacturing Planning</h3>
+                <p><strong>C-Hawk Technology:</strong> Lập kế hoạch 400+ SKU ngành Semiconductor.</p>
+                <p class="stats">✓ Phục hồi OTD từ 88% lên 100%</p>
+                <p class="stats">✓ Chuẩn hóa BOM/BOO tiết kiệm Lead Time</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Kỹ năng số (Hard Skills)</h2>
+        <div>
+            <span class="badge">SQL (Advanced)</span>
+            <span class="badge">Power BI & Dashboards</span>
+            <span class="badge">Python for Data Analysis</span>
+            <span class="badge">Advanced Excel (VBA/Power Query)</span>
+            <span class="badge">SAP/ERP/Epicor</span>
+            <span class="badge">MPS/MRP Modeling</span>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Phan Tran Quoc Bao. Built with HTML/CSS for Remote Employers.</p>
+</footer>
+
+</body>
+</html>
+"""
