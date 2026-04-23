@@ -1,6 +1,6 @@
 html_content = """
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,29 +8,23 @@ html_content = """
     <style>
         :root {
             --primary: #2563eb;
-            --dark: #1e293b;
+            --dark: #0f172a;
             --light: #f8fafc;
             --accent: #3b82f6;
         }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; color: var(--dark); background: var(--light); }
-        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; color: var(--dark); background: var(--light); }
+        .container { max-width: 1000px; margin: auto; padding: 20px; }
         header { background: white; padding: 60px 0; border-bottom: 4px solid var(--primary); text-align: center; }
-        h1 { margin: 0; color: var(--primary); font-size: 2.5em; text-transform: uppercase; }
-        .tagline { font-size: 1.2em; color: #64748b; margin-top: 10px; }
-        
-        .section { background: white; padding: 30px; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }
-        h2 { border-left: 5px solid var(--primary); padding-left: 15px; color: var(--dark); margin-top: 0; }
-        
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-        .card { border: 1px solid #e2e8f0; padding: 20px; border-radius: 8px; transition: transform 0.3s; }
-        .card:hover { transform: translateY(-5px); border-color: var(--primary); }
-        .card h3 { margin-top: 0; color: var(--primary); }
-        
-        .stats { color: var(--primary); font-weight: bold; font-size: 1.1em; }
-        .badge { background: #dbeafe; color: #1e40af; padding: 4px 12px; border-radius: 20px; font-size: 0.85em; display: inline-block; margin: 5px 2px; }
-        
-        .contact-btn { display: inline-block; background: var(--primary); color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; margin-top: 20px; }
-        footer { text-align: center; padding: 40px; color: #64748b; }
+        h1 { margin: 0; color: var(--primary); font-size: 2.5em; }
+        .tagline { color: #475569; margin-top: 10px; }
+        .section { background: white; padding: 30px; margin: 20px 0; border-radius: 10px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); }
+        h2 { border-left: 5px solid var(--primary); padding-left: 12px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .card { border: 1px solid #e2e8f0; padding: 20px; border-radius: 8px; }
+        .stats { color: var(--primary); font-weight: bold; }
+        .badge { background: #dbeafe; color: #1e40af; padding: 6px 12px; border-radius: 20px; display: inline-block; margin: 5px; font-size: 0.85em; }
+        .contact-btn { display: inline-block; background: var(--primary); color: white; padding: 12px 25px; text-decoration: none; border-radius: 6px; margin-top: 20px; }
+        footer { text-align: center; padding: 30px; color: #64748b; }
     </style>
 </head>
 <body>
@@ -38,51 +32,92 @@ html_content = """
 <header>
     <div class="container">
         <h1>Phan Tran Quoc Bao</h1>
-        <p class="tagline">Senior Operations & Data Analytics | 10+ Years Experience</p>
-        <p>Binh Duong, Vietnam • bao11121995@gmail.com • IELTS 7.0</p>
-        <a href="mailto:bao11121995@gmail.com" class="contact-btn">Liên hệ với tôi</a>
+        <p class="tagline">Operations & Supply Chain Specialist | Manufacturing • Logistics • Data Analytics</p>
+        <p>Binh Duong, Vietnam • (+84) 916 11 12 95 • bao11121995@gmail.com</p>
+        <p>IELTS 7.0 • Open for Remote Global Opportunities</p>
+        <a href="mailto:bao11121995@gmail.com" class="contact-btn">Contact Me</a>
     </div>
 </header>
 
 <div class="container">
+
     <div class="section">
-        <h2>Tóm lược chuyên môn</h2>
-        <p>Chuyên gia vận hành với thành tích đã được chứng minh trong việc thúc đẩy hiệu quả đầu cuối (end-to-end) trên khắp các lĩnh vực Sản xuất, Lập kế hoạch nhu cầu và Logistics quy mô toàn quốc. Chuyên gia về SQL/BI giúp cắt giảm 50% khối lượng công việc thủ công.</p>
+        <h2>Professional Summary</h2>
+        <p>
+            Operations & Planning Specialist with 6+ years of experience driving end-to-end efficiency across Manufacturing, Demand Planning, and Nationwide Logistics.
+            Proven track record of delivering measurable impact through data-driven decision making and scalable system design.
+        </p>
+        <p class="stats">
+            • Reduced logistics cost by ~8% • Increased productivity by 25–30% • Cut manual workload by ~50% • Recovered OTD from 88% → 100%
+        </p>
     </div>
 
     <div class="section">
-        <h2>Dự án tiêu biểu & Tác động</h2>
+        <h2>Key Impact Projects</h2>
         <div class="grid">
+
             <div class="card">
-                <h3>Logistics Optimization</h3>
-                <p><strong>Lazada Express:</strong> Quản lý 200K-240K đơn hàng/ngày.</p>
-                <p class="stats">✓ Giảm 8% chi phí Logistics</p>
-                <p class="stats">✓ Tăng 25-30% năng suất</p>
+                <h3>Nationwide Logistics Optimization</h3>
+                <p><strong>Lazada Express Vietnam</strong></p>
+                <p>Managed transport planning for nationwide network (200K–240K parcels/day, 30+ hubs).</p>
+                <p class="stats">• Reduced logistics cost by ~8%</p>
+                <p class="stats">• Increased productivity by 25–30%</p>
+                <p class="stats">• Improved hub capacity by ~20%</p>
+                <p class="stats">• Maintained 96% same-day pickup</p>
+                <p class="stats">• Cut manual workload by ~50% via automation</p>
             </div>
+
             <div class="card">
-                <h3>Manufacturing Planning</h3>
-                <p><strong>C-Hawk Technology:</strong> Lập kế hoạch 400+ SKU ngành Semiconductor.</p>
-                <p class="stats">✓ Phục hồi OTD từ 88% lên 100%</p>
-                <p class="stats">✓ Chuẩn hóa BOM/BOO tiết kiệm Lead Time</p>
+                <h3>Manufacturing Planning & Ramp-up</h3>
+                <p><strong>C-Hawk Technology International</strong></p>
+                <p>Owned MPS/MRP for 400+ semiconductor SKUs ($15–20M revenue scope).</p>
+                <p class="stats">• Recovered OTD from ~88% → 100%</p>
+                <p class="stats">• Built planning system for new factory (greenfield)</p>
+                <p class="stats">• Enabled scalable ramp-up for 400+ SKUs</p>
+                <p class="stats">• Reduced rescheduling & material inefficiencies</p>
             </div>
+
         </div>
     </div>
 
     <div class="section">
-        <h2>Kỹ năng số (Hard Skills)</h2>
+        <h2>Core Competencies</h2>
+        <div>
+            <span class="badge">MPS/MRP & Capacity Planning</span>
+            <span class="badge">Logistics Network Optimization</span>
+            <span class="badge">Cost-to-Serve & Budget Control</span>
+            <span class="badge">WIP & FG Flow Optimization</span>
+            <span class="badge">Routing & Transport Planning</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Data & Systems</h2>
         <div>
             <span class="badge">SQL (Advanced)</span>
-            <span class="badge">Power BI & Dashboards</span>
-            <span class="badge">Python for Data Analysis</span>
-            <span class="badge">Advanced Excel (VBA/Power Query)</span>
-            <span class="badge">SAP/ERP/Epicor</span>
-            <span class="badge">MPS/MRP Modeling</span>
+            <span class="badge">Power BI & Dashboarding</span>
+            <span class="badge">Power Query Automation</span>
+            <span class="badge">Advanced Excel</span>
+            <span class="badge">SAP / ERP / Epicor</span>
+            <span class="badge">BRD / PRD Documentation</span>
         </div>
     </div>
+
+    <div class="section">
+        <h2>Career Highlights</h2>
+        <ul>
+            <li>Led transport & capacity planning across 30+ hubs nationwide</li>
+            <li>Designed Max/Min/Safety Capacity models for factory ramp-up</li>
+            <li>Built automation dashboards reducing manual workload by ~50%</li>
+            <li>Managed cross-functional planning (Ops, Engineering, Supply Chain)</li>
+            <li>Delivered system improvements (routing logic, UI/UX, planning tools)</li>
+        </ul>
+    </div>
+
 </div>
 
 <footer>
-    <p>&copy; 2026 Phan Tran Quoc Bao. Built with HTML/CSS for Remote Employers.</p>
+    <p>© 2026 Phan Tran Quoc Bao | Built for Global Remote Opportunities</p>
 </footer>
 
 </body>
